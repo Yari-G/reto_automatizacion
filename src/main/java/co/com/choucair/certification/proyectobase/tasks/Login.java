@@ -15,8 +15,8 @@ public class Login implements Task {
     @Override
     public <T extends Actor> void performAs(T actor){
         actor.attemptsTo(Click.on(ChoucairLoginPage.LOGIN_BUTTON),
-            Enter.theValue("ygonzalezg").into(ChoucairLoginPage.INPUT_USER),
-            Enter.theValue("P4n4m41823+").into(ChoucairLoginPage.INPUT_PASSWORD),
+            Enter.theValue("IngresarUsuario").into(ChoucairLoginPage.INPUT_USER),
+            Enter.theValue("IngresarClave").into(ChoucairLoginPage.INPUT_PASSWORD),
             Click.on(ChoucairLoginPage.ENTER_BUTTON)
         );
     }
